@@ -1,0 +1,175 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header,
+footer {
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.news-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.news-card:hover {
+    transform: scale(1.05);
+}
+
+.news-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.news-card h2 {
+    margin: 0 0 0.5rem 0;
+    text-align: center;
+}
+
+.news-card p {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.read-more-button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.read-more-button:hover {
+    background-color: darkblue;
+}
+
+.loading-spinner {
+    margin-top: 1rem;
+}
+
+.fade-enter {
+    opacity: 0;
+}
+
+.fade-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit-active {
+    opacity: 0;
+    transition: opacity 500ms ease-in;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .news-card {
+        padding: 0.5rem;
+        margin: 0.5rem;
+    }
+
+    .news-card h2 {
+        font-size: 1.25rem;
+    }
+
+    .news-card p {
+        font-size: 0.875rem;
+    }
+
+    .read-more-button {
+        padding: 0.5rem;
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .news-card {
+        padding: 0.5rem;
+        margin: 0.25rem;
+    }
+
+    .news-card h2 {
+        font-size: 1rem;
+    }
+
+    .news-card p {
+        font-size: 0.75rem;
+    }
+
+    .read-more-button {
+        padding: 0.25rem;
+        font-size: 0.75rem;
+    }
+}
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #282c34;
+    color: white;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.website {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.heading {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.download-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.stay-updated {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.paragraph {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.download-now {
+    background-color: #021223;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
